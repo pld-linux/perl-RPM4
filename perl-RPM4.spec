@@ -22,6 +22,9 @@ BuildRequires:	perl-Digest-SHA1
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# N/A yet
+%define		_noautoreq 'perl(MDV::Packdrakeng)'
+
 %description
 This module allow to use API functions from rpmlib, directly or trough
 perl objects.
