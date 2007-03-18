@@ -4,7 +4,9 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	RPM4
+#
 Summary:	RPM4 - perl module to access and manipulate RPM files
+Summary(pl.UTF-8):	Moduł języka Perl manipulacji i dostępu do plików RPM
 Name:		perl-RPM4
 Version:	0.20
 Release:	0.1
@@ -26,8 +28,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq 'perl(MDV::Packdrakeng)'
 
 %description
-This module allow to use API functions from rpmlib, directly or trough
-perl objects.
+This module allow to use API functions from rpmlib - a RPM files
+manipulation library - directly or trough perl objects.
+
+%description -l pl.UTF-8
+Moduł RPM4 pozwala na użycie funkcji API biblioteki manipulacji
+plikami RPM rpmlib bezpośrednio lub poprzez obiekty perlowe.
 
 %prep
 %setup -q -n %{pdir}-%{version}
