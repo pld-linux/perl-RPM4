@@ -8,13 +8,13 @@
 Summary:	RPM4 - perl module to access and manipulate RPM files
 Summary(pl.UTF-8):	Moduł języka Perl manipulacji i dostępu do plików RPM
 Name:		perl-RPM4
-Version:	0.20
+Version:	0.23
 Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/N/NA/NANARDON/RPM4/RPM4-%{version}.tar.gz
-# Source0-md5:	357df83b9a8cafe979dcb33eb1603e50
+# Source0-md5:	29b408f63d719619ac57930428ad14bb
 URL:		http://search.cpan.org/dist/RPM4/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
