@@ -9,7 +9,7 @@ Summary:	RPM4 - perl module to access and manipulate RPM files
 Summary(pl.UTF-8):	Moduł języka Perl manipulacji i dostępu do plików RPM
 Name:		perl-RPM4
 Version:	0.23
-Release:	0.1
+Release:	0.2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -82,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/RPM4/Transaction.pm
 %dir %{perl_vendorarch}/RPM4/Transaction
 %{perl_vendorarch}/RPM4/Transaction/Problems.pm
+%dir %{perl_vendorarch}/auto/RPM4
 %{perl_vendorarch}/auto/RPM4/RPM4.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/RPM4/RPM4.so
 %{_mandir}/man1/*
