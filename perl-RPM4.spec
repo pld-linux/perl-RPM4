@@ -83,7 +83,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/RPM4/Transaction
 %{perl_vendorarch}/RPM4/Transaction/Problems.pm
 %dir %{perl_vendorarch}/auto/RPM4
-%{perl_vendorarch}/auto/RPM4/RPM4.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/RPM4/RPM4.so
 %{_mandir}/man1/*
 %{_mandir}/man3/*
